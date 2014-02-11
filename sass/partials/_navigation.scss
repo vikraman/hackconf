@@ -27,6 +27,10 @@ body > nav {
   fieldset.mobile-nav{ float: left; width: 48%;
     select{ width: 100%; font-size: .8em; border: 1px solid #888;}
   }
+  fieldset[class=mobile-nav] { display: none; }
+  @media (max-width: 550px) {
+    fieldset[class=mobile-nav] { display: block; }
+  }
   ul { display: none; }
   @media only screen and (min-width: 550px) {
     font-size: .9em;

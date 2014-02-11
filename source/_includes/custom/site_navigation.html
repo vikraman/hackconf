@@ -1,5 +1,17 @@
-<ul class="main-navigation">
-  <li><a href="{{ root_url }}/">Home</a></li>
+<fieldset class="mobile-nav" id="mobile-nav">
+  <select>
+    <option value="">Navigate…</option>
+    <option value="{{ root_url }}/">» Home</option>
+    <option value="{{ root_url }}/blog">» Blog</option>
+    <option value="{{ root_url }}/blog/archives">» Archives</option>
+    <option value="{{ root_url }}/faq">» FAQ</option>
+    <option value="{{ root_url }}/about">» About Us</option>
+    <option value="{{ root_url }}/contact">» Contact Us</option>
+    <option value="{{ root_url }}/atom.xml">» RSS</option>
+  </select>
+</fieldset>
+
+<ul class="site-navigation">
   <li><a href="{{ root_url }}/blog">Blog</a></li>
   <li><a href="{{ root_url }}/blog/archives">Archives</a></li>
   <li><a href="{{ root_url }}/faq">FAQ</a></li>
